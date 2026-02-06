@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Said Mustaf Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background-color: var(--bg-card);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .project-detail {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-dark);
+        }
+
+        .project-detail:nth-child(odd) {
+            background-color: var(--bg-section);
+        }
+
+        .project-detail:last-child {
+            border-bottom: none;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .detail-image img {
+            border-radius: 16px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .detail-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .client-info {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .detail-list {
+            margin: 20px 0;
+        }
+
+        .detail-list li {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+            color: var(--text-muted);
+        }
+
+        .detail-list li i {
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-chalkboard-user"></i> Said<span class="highlight">M</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects" class="active">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="assets/Said Mustaf Ahmed Europass CV-1 (1).pdf" download class="btn btn-primary small">Download
+                    CV</a>
+            </div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Featured Projects</h1>
+            <p>In-depth look at my engineering contributions.</p>
+        </div>
+    </section>
+
+    <!-- Medical House -->
+    <section id="medical-house" class="project-detail">
+        <div class="container detail-grid">
+            <div class="detail-image">
+                <!-- User will replace with assets/medical-house.jpg -->
+                <img src="assets/insidemedicalhousemadina.jpeg" alt="Construction of Medical House Inside">
+            </div>
+            <div class="detail-content">
+                <span class="client-info">Client: Madina Hospital | Location: Mogadishu</span>
+                <h2>Construction of Medical house "inside" - Madina Hospital</h2>
+                <p>Complete construction of a new medical house facility for Madina Hospital. This project involved
+                    civil works, finishing, and integration with existing hospital infrastructure to support expanded
+                    medical services.</p>
+                <ul class="detail-list">
+                    <li><i class="fa-solid fa-check"></i> Foundation design and construction.</li>
+                    <li><i class="fa-solid fa-check"></i> Superstructure assembly and masonry.</li>
+                    <li><i class="fa-solid fa-check"></i> High-quality interior and exterior finishing.</li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-primary">Contact regarding similar projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elevated Water Tank -->
+    <section id="water-tank" class="project-detail">
+        <div class="container detail-grid">
+            <div class="detail-content">
+                <span class="client-info">Client: Madina Hospital | Location: Mogadishu</span>
+                <h2>Elevated Water Tank</h2>
+                <p>Construction of a reinforced concrete elevated water tank. This project ensures consistent water
+                    pressure and storage capacity for the medical facility's daily operations.</p>
+                <ul class="detail-list">
+                    <li><i class="fa-solid fa-check"></i> Structural design and load analysis.</li>
+                    <li><i class="fa-solid fa-check"></i> High-altitude reinforced concrete casting (scaffolding works).
+                    </li>
+                    <li><i class="fa-solid fa-check"></i> Impact-resistant structural framework.</li>
+                </ul>
+            </div>
+            <div class="detail-image">
+                <!-- User will replace with assets/elevated-tank-construction.jpg -->
+                <img src="assets/newelevatedwatertankmadina2.jpeg" alt="Water Tank Construction">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rehabilitation of Existing Elevated Water Tank -->
+    <section id="rehab-tank" class="project-detail">
+        <div class="container detail-grid">
+            <div class="detail-image">
+                <img src="assets/existingelavetedwatertrankmadina.jpeg" alt="Rehabilitation Works">
+            </div>
+            <div class="detail-content">
+                <span class="client-info">Client: Madina Hospital | Role: Site Engineer</span>
+                <h2>Rehabilitation of Existing Elevated Water Tank</h2>
+                <p>Comprehensive rehabilitation of the aging elevated water tank structure. The project focused on
+                    structural retrofitting, leak repairs, and extending the service life of this critical asset.</p>
+                <ul class="detail-list">
+                    <li><i class="fa-solid fa-check"></i> Assessment of structural integrity.</li>
+                    <li><i class="fa-solid fa-check"></i> Concrete surface repair and waterproofing.</li>
+                    <li><i class="fa-solid fa-check"></i> Reinforcement protection and coating application.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rehabilitation of Medical Warehouse -->
+    <section id="warehouse" class="project-detail">
+        <div class="container detail-grid">
+            <div class="detail-content">
+                <span class="client-info">Client: Madina Hospital | Location: Mogadishu</span>
+                <h2>Rehabilitation of Medical Warehouse</h2>
+                <p>Renovation and upgrading of the central medical warehouse. The project involved structural
+                    improvements, roofing repairs, and installation of climate control measures to meet medical storage
+                    standards.</p>
+                <ul class="detail-list">
+                    <li><i class="fa-solid fa-check"></i> Roofing replacement and insulation.</li>
+                    <li><i class="fa-solid fa-check"></i> Flooring and wall finishing upgrades.</li>
+                    <li><i class="fa-solid fa-check"></i> Improvement of ventilation and access systems.</li>
+                </ul>
+            </div>
+            <div class="detail-image">
+                <img src="assets/medicalwarehousemadina.jpeg" alt="Medical Warehouse Rehabilitation">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-chalkboard-user"></i> Said<span class="highlight">M</span>
+                    </div>
+                    <p class="footer-desc">
+                        Civil & Structural Engineer dedicated to building safe, sustainable, and enduring infrastructure
+                        for modern communities.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/said-mustaf-ahmed-91b05726" class="social-icon"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/252615189112" class="social-icon"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li class="contact-li">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:smustafahmed@gmail.com">smustafahmed@gmail.com</a>
+                        </li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+252615189112">(+252) 615189112</a>
+                        </li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Mogadishu, Somalia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home" class="contact-li">Home</a></li>
+                        <li><a href="index.html#about" class="contact-li">About Me</a></li>
+                        <li><a href="index.html#projects" class="contact-li">Projects</a></li>
+                        <li><a href="assets/Said Mustaf Ahmed Europass CV-1 (1).pdf" download
+                                class="contact-li">Download CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Said Mustaf Ahmed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrucCore - Said Mustaf Ahmed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-chalkboard-user"></i> Said<span class="highlight">M</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="assets/Said Mustaf Ahmed Europass CV-1 (1).pdf" download class="btn btn-primary small">Download
+                    CV</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Available for New Projects</div>
+                <h1>Hi, I'm <span class="text-gradient">Said Mustaf Ahmed</span></h1>
+                <p class="subtitle">Civil & Structural Engineer managing projects including hospitals, water supply
+                    infrastructure, and residential complexes.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="mailto:smustafahmed@gmail.com?subject=Hiring%20Inquiry" class="btn btn-secondary">Hire
+                        Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for the image of the engineer -->
+                <div class="image-wrapper">
+                    <img src="assets/hero.png" alt="Said Mustaf Ahmed" id="hero-img-placeholder">
+                    <div class="experience-badge">
+                        <span class="years">1+</span>
+                        <span class="text">Years of<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Expertise Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-tag">Engineering Expertise</h4>
+                <h2>Designing the Backbone of<br>Modern Cities</h2>
+                <p>Skilled in project planning, site supervision, structural analysis, and climate-resilient design. I
+                    deliver engineering solutions that stand the test of
+                    time.</p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="card">
+                    <div class="icon-box"><i class="fa-solid fa-building"></i></div>
+                    <h3>Structural Analysis</h3>
+                    <p>Finite element modeling and advanced dynamic load simulations.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><i class="fa-solid fa-road"></i></div>
+                    <h3>Civil Design</h3>
+                    <p>Integrated infrastructure planning and urban water management.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <h3>Site Supervision</h3>
+                    <p>Ensuring safety compliance and precise design implementation.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Sustainability</h3>
+                    <p>LEED certified structural approaches and green material selection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                <h4 class="section-tag">Background</h4>
+                <h2>Education & Experience</h2>
+                <p style="color: var(--text-muted);">My academic foundation and professional journey.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+                <div>
+                    <h3 style="margin-bottom: 20px;"><i class="fa-solid fa-briefcase"
+                            style="color: var(--primary);"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="date">Nov 2024 - Present</span>
+                                <h3>Site Engineer</h3>
+                                <h4>Kamaal Engineers Ltd.</h4>
+                                <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 10px;">Supervising excavation,
+                                    foundation, and structural casting. Ensuring strict compliance with safety &
+                                    durability standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 20px;"><i class="fa-solid fa-graduation-cap"
+                            style="color: var(--secondary);"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="date">2024</span>
+                                <h3>Bachelor of Civil Engineering</h3>
+                                <h4>Benadir University</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="date">2022</span>
+                                <h3>Diploma in Architectural Engineering</h3>
+                                <h4>Samabile Professional College</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="date">2022</span>
+                                <h3>Diploma in Cost Estimation & Contracting</h3>
+                                <h4>Abrar University</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-tag">Credentials</h4>
+                <h2>Licenses & Certifications</h2>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-info">
+                        <h4>Intro to HSE Engineering</h4>
+                        <span>Khalifa University (2025)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-bars-progress"></i></div>
+                    <div class="cert-info">
+                        <h4>Construction Management</h4>
+                        <span>Univ. of Maryland (2025)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-water"></i></div>
+                    <div class="cert-info">
+                        <h4>Water Pollution Management</h4>
+                        <span>Cap-Net (2025)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h4>Prokon Analysis & Design</h4>
+                        <span>Udemy (2025)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="cert-info">
+                        <h4>Oracle Primavera P6</h4>
+                        <span>Udemy (2024)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-cube"></i></div>
+                    <div class="cert-info">
+                        <h4>SketchUp & Revit</h4>
+                        <span>Udemy (2024)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <div class="cert-info">
+                        <h4>IWRM for Climate Resilience</h4>
+                        <span>Cap-Net (2023)</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <div class="cert-info">
+                        <h4>Intro to Climate Change</h4>
+                        <span>CARE Academy (2023)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header">
+                <div>
+                    <h4 class="section-tag">Portfolio</h4>
+                    <h2>Featured Projects</h2>
+                </div>
+                <p>A showcase of high-performance structures and civil masterworks completed across three continents.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card blog-style">
+                    <div class="project-image" style="background-image: url('assets/medicalhousemadina.jpeg');">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span>Madina Hospital</span>
+                        <h3>Construction of Medical House</h3>
+                        <p class="project-desc">Construction of a specialized medical facility house for Madina
+                            Hospital, enhancing healthcare infrastructure capacity.</p>
+                        <a href="projects.html#medical-house" class="btn btn-primary small">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card blog-style">
+                    <div class="project-image" style="background-image: url('assets/newelevatedwatertankmadina.jpeg');">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span>Madina Hospital</span>
+                        <h3>Elevated Water Tank</h3>
+                        <p class="project-desc">Design and construction of a high-capacity elevated water tank to ensure
+                            reliable water supply for the hospital complex.</p>
+                        <a href="projects.html#water-tank" class="btn btn-primary small">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card blog-style">
+                    <div class="project-image"
+                        style="background-image: url('assets/existingelavetedwatertrankmadina.jpeg');">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span>Madina Hospital</span>
+                        <h3>Rehabilitation of Existing Elevated Water Tank</h3>
+                        <p class="project-desc">Structural rehabilitation and strengthening of the existing elevated
+                            water tank to restore full functionality and safety.</p>
+                        <a href="projects.html#rehab-tank" class="btn btn-primary small">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card blog-style">
+                    <div class="project-image" style="background-image: url('assets/medicalwarehousemadina.jpeg');">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span>Madina Hospital</span>
+                        <h3>Rehabilitation of Medical Warehouse</h3>
+                        <p class="project-desc">Complete rehabilitation of the medical storage warehouse to ensure safe
+                            and sterile conditions for pharmaceutical supplies.</p>
+                        <a href="projects.html#warehouse" class="btn btn-primary small">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-btn">
+                <a href="projects.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-text">
+                <h4 class="section-tag">Contact Me</h4>
+                <h2>Let's build<br>something<br>enduring</h2>
+                <p>Looking for structural consultation or project partnership? Reach out and I'll get back to you within
+                    24 hours.</p>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h5>Email</h5>
+                            <a href="mailto:smustafahmed@gmail.com">smustafahmed@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h5>Office</h5>
+                            <p>Mogadishu, Somalia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type">
+                            <option>Structural Consultation</option>
+                            <option>Civil Design</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-chalkboard-user"></i> Said<span class="highlight">M</span>
+                    </div>
+                    <p class="footer-desc">
+                        Civil & Structural Engineer dedicated to building safe, sustainable, and enduring infrastructure
+                        for modern communities.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/said-mustaf-ahmed-91b05726" class="social-icon"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/252615189112" class="social-icon"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li class="contact-li">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:smustafahmed@gmail.com">smustafahmed@gmail.com</a>
+                        </li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+252615189112">(+252) 615189112</a>
+                        </li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Mogadishu, Somalia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="contact-li">Home</a></li>
+                        <li><a href="#about" class="contact-li">About Me</a></li>
+                        <li><a href="#projects" class="contact-li">Projects</a></li>
+                        <li><a href="assets/Said Mustaf Ahmed Europass CV-1 (1).pdf" download
+                                class="contact-li">Download CV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Said Mustaf Ahmed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
